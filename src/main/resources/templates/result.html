@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Result</title>
+</head>
+<body>
+<h2>Employee Result</h2>
+<p>Full Name: <span th:text="${fullName}"></span></p>
+<p>Number of Dependents: <span th:text="${dependents}"></span></p>
+<p>Gross Pay: $<span th:text="${grossPay}"></span></p>
+<p>Tax Rate: <span th:text="${taxRate}"></span>%</p>
+<p>Net Pay: $<span th:text="${netPay}"></span></p>
+
+<!-- Add a button to go back to the employeeForm -->
+<a th:href="@{/employeeForm}">
+    <button type="button">Go Back to Employee Form</button>
+</a>
+</body>
+</html>
